@@ -1,0 +1,56 @@
+.cardContainer{
+    max-width: 33%;
+    margin: 0 auto;
+}
+.cardItem{
+    margin: 2rem 0px;
+    background-color: rgba(255, 255, 255, 1.0);
+    border-radius: 5px;
+    padding-bottom: 1.5rem;
+}
+.description, .about{
+    padding: 1.5rem 2rem 0px 2rem;
+}
+.description .title{
+    color: black;
+    font-weight: bold;
+}
+.description .price{
+    background-color: #eee;
+    color: rgb(46, 185, 240);
+    padding: 0rem 1rem;
+    font-weight: bold;
+    border-radius: 2px;
+}
+.description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.about{
+    color: #3f3f3f;
+}
+.about button{
+    background-color: inherit;
+    color: rgb(46, 185, 240);
+    border: none;
+    cursor: pointer;
+}
+.notInterested{
+    margin-top: 1rem;
+    text-align: center;
+}
+.notInterested button{
+    padding: 2px 2rem;
+    border: 1px solid crimson;
+    border-radius: 3px;
+    background-color: white;
+    color: crimson;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.image{
+    width: 100%;
+    height: 350px;
+    border-radius: 5px 5px 0px 0px;
+}
