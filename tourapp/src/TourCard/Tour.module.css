@@ -59,21 +59,14 @@
     .cardContainer{
         width: 90%;
     }
-    .cardItem{
-        width: 100%;
-    }
+    
     .description{
         display: block;
         margin: 0;
-        /* justify-content: space-between; */
     }
 }
 @media all and (min-width:601px) and (max-width:999px){
     .cardContainer{
         width: 60%;
-    }
-    .cardItem{
-        width: 100%;
-    }
-    
+    }   
 }
