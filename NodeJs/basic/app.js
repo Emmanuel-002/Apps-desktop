@@ -8,7 +8,9 @@ const fs = require('fs');
 //     process.exit();
 // }
 const server = http.createServer((req, res) => {
-    if(req.url==='/'){
+    const url = req.url;
+    const method = req.method
+    if(url==='/'){
     res.write('<html>')
         res.write('<head><title>Message</title></head>')
         res.write("<body><form method='POST' action='/message'>")
@@ -17,8 +19,20 @@ const server = http.createServer((req, res) => {
         res.write('</form></body></html>')
     return res.end()
     }
-    if(req.url==='/message' && req.method==='POST'){
-        fs.writeFileSync('message.txt', 'dummy text')
+    //post
+    if(url==='/message' && method==='POST'){
+        const bodyData=[];
+        req.on('data',(chunk)=>{
+           console.log(chunk)
+            bodyData.push(chunk)
+        })
+        req.on('end',()=>{
+            const parsedBody=Buffer.concat(bodyData).toString();
+            console.log(parsedBody)
+            const message =parsedBody.split('=')[1];
+            fs.writeFileSync('message.txt', message)
+        })
+        // fs.writeFileSync('message.txt', 'dummy text')
         res.writeHead(302,{Location:'/'})
         return res.end()
     }
