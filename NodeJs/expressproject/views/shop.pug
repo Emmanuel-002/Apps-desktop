@@ -1,0 +1,19 @@
+//- npm install pug
+extends layouts/main-layout.pug
+block content
+        main
+            if prods.length > 0
+                .grid
+                    each products in prods
+                        article.card.product-item
+                        header.card__header
+                            h1.product__title #{products.title}
+                        div.card__image
+                            img(src="https://images.unsplash.com/photo-1659536019078-361c92fbfdf6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60")
+                        .card__content
+                            h2.product__price $10
+                            p.product__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, quisquam.
+                        .card__actions 
+                            button.btn Add to cart
+            else
+                h1 No Products
