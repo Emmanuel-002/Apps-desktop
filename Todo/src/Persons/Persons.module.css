@@ -1,0 +1,58 @@
+.todoapp_container{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    color: #666;
+    width: 33%;
+    margin: 2rem auto;
+    padding: 2rem;
+    box-shadow: 10px 10px 80px rgb(249, 85, 113);
+}
+@media all and (max-width:600px){
+    .todoapp_container{
+        margin: 5rem auto;
+        width: 96%;
+    }
+}
+@media all and (min-width:601px) and (max-width:1000px){
+    .todoapp_container{
+        width: 60%;
+    }
+}
+.individualBox{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+.image{
+    padding-top: 10px;
+}
+div img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.description{
+    line-height: 0.5rem;
+    padding-left: 1rem;
+}
+.description h3{
+    text-align: left;
+    font-size: 1rem;
+}
+button{
+    background-color: pink;
+    color: whitesmoke;
+    height: 30px;
+    width: 90%;
+    border: 1px solid pink;
+    border-radius: 5px;
+    margin: 20px 10px 10px 10px;
+    transition: all 500ms ease-in-out 0s;
+}
+button:hover{
+    cursor: pointer;
+    background-color: crimson;
+}
+.clear{
+    text-align: center;
+}

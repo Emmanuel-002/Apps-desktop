@@ -1,0 +1,63 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  font-family: sans-serif;
+}
+body{
+  margin: 0;
+  background-color: #3f3f3f;
+}
+.app{
+  width: 50rem;
+  max-width: 90%;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 3rem auto;
+}
+.form-control{
+  margin-bottom: 1rem;
+}
+.form-control label, 
+.form-control input{
+  display: block;
+}
+.form-control label{
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+.form-control input{
+  font: inherit;
+  padding: 0.5rem;
+  width: 30rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 100%;
+}
+button{
+  font: inherit;
+  cursor: pointer;
+  background-color: crimson;
+  color: white;
+  border: 1px solid white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+}
+.form-actions{
+  text-align: right;
+}
+.form-actions button{
+  margin-right: 1.75rem;
+}
+.invalid input{
+  border-color: red;
+}
+.error-text{
+  color: red;
+}
+button:disabled{
+  cursor: not-allowed;
+  background-color: #ccc;
+  color: #3f3f3f;
+}

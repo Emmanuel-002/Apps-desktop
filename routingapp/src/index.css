@@ -1,0 +1,13 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  font-family: 'Courier New', Courier, monospace;
+}
+body{
+  margin: 0;
+}
+main{
+  margin-top: 5rem;
+  text-align: center;
+}
