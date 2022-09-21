@@ -1,0 +1,19 @@
+.learn_banner{
+    width: 99%;
+    margin: 0.5rem auto;
+}
+.learn_banner img{
+width: 100%;
+}
+.course{
+    width: 90%;
+    margin: 1rem auto;
+    background-color: white;
+    box-shadow: 5px 5px 15px 15px whitesmoke;
+}
+.course-description{
+    padding: 0.5rem 0px;
+}
+.course-description h4,p{
+    padding: 0.2rem 0.5rem;
+}

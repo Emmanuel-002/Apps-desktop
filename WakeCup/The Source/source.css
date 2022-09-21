@@ -1,0 +1,24 @@
+.ethiopia_banner{
+    width: 98%;
+    margin: 2rem auto;
+}
+.ethiopia_banner img{
+    width:100%;
+    height: 20vw;
+}
+.headline.estate_name{
+    background-color: rgba(34, 7, 1, 1.0);
+    color: whitesmoke;
+    padding: 0 1rem;
+}
+.headline.estate_name p.header{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.headline.estate_name a{
+    width: 100%; 
+}
+.headline.estate_name a img{
+    width: 100%;
+    margin-top: 1rem;
+}

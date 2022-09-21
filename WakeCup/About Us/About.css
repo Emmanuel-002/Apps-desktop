@@ -1,0 +1,48 @@
+.about_banner{
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: url('../Assets/images/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8rem 1rem;
+    text-align: center;
+    margin: 0.5rem auto;
+    color: whitesmoke;
+    font-size: 2.5rem;
+}
+section img{
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+}
+section span{
+    color: rgba(223, 6, 6, 0.801);
+}
+article ul{
+    list-style-type: none;
+}
+article ul li{
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+@media all and (max-width:480px){
+    article{
+        width: 96%;
+    }
+    .about_banner{
+    font-size: 1.5rem;
+    }
+}
+@media all and (min-width:481px) and (max-width:768px){
+    article{
+        width: 96%;
+    }
+}
+@media all and (min-width:769px) and (max-width:1024px){
+    article{
+        width: 98%;
+    }
+}
