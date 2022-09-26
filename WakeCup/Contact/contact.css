@@ -35,7 +35,8 @@ input.text-field{
 .text-field:focus{
     outline-color: rgba(223, 6, 6, 0.801);
 }
-input[type="submit"]{
+button{
+    width: 100%;
     background-color: rgb(95, 20, 3);
     border: 1px solid rgb(95, 20, 3);
     border-radius: 5px;
@@ -43,7 +44,7 @@ input[type="submit"]{
     font-size: 1.5rem;
     transition: all 100ms ease-in-out;
 }
-input[type="submit"]:hover{
+button:hover{
     background-color: rgba(223, 6, 6, 0.801);
 }
 @media all and (max-width:480px){

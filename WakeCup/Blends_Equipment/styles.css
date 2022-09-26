@@ -29,12 +29,13 @@ article{
     margin: 1rem auto;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 8rem 1rem;
+    padding: 0rem 1rem;
     background-position: center;
     font-size: 2rem;
     color: rgba(223, 6, 6, 0.801);
     font-style: oblique;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Verdana;
+    height: 40vh;
 }
 .banner.unique .quote{
     width: 30%;
@@ -79,11 +80,8 @@ article{
     font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
     padding: 1rem;
+    box-sizing: border-box;
     margin: 0.5rem;
-}
- .blend_types .banner .unique_banner,
-.blend_types .banner .classic_banner{
-    margin: 1rem;
 }
 .blend_types .banner a{
     font-size: 3rem;
@@ -112,21 +110,29 @@ article{
     .blend_types{
         display: flex;
         flex-flow: column;
+        width: 98%;
     }
     .banner.unique .quote{
         width: 60%;
         font-size: 1.2rem;
     }
 }
-@media all and (min-width:481px) and (max-width:769px){
+@media all and (min-width:481px) and (max-width:768px){
     .product{
         grid-template-columns: repeat(2,1fr);
     }
     .blend_types{
         display: flex;
         flex-flow: column;
+        width: 98%;
     }
     .banner.unique .quote{
         font-size: 1.5rem;
     }
+}
+@media all and (min-width:769px) and (max-width:1024px){
+    .blend_types{
+        display: flex;
+        flex-flow: row;
+}
 }

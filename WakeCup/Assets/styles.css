@@ -1,4 +1,16 @@
-*{
+@font-face {
+    font-family: Lato;
+    src: url('./fonts/Lato-Regular.ttf');
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Nunito Sans;
+    src: url('./fonts/NunitoSans-Regular.ttf');
+    font-weight: normal;
+    font-display: swap;
+}
+*{  
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -7,7 +19,8 @@ html{
     background-color: white;
 }
 body{
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-family: Verdana, Geneva, sans-serif;
+    font-family: Lato;
 }
 header{
     display: flex;
@@ -19,6 +32,7 @@ header{
     position: sticky;
     top: 0;
     padding: 0 .2rem;
+    z-index: 2;
 }
 .header-logo{
     flex: 1;
@@ -100,6 +114,9 @@ footer h2{
 .footer-center ul li a{
     color: whitesmoke;
     text-decoration: none;
+}
+.footer-center ul li a:hover{
+    color:rgba(223, 6, 6, 0.801);
 }
 button{
     font-size: 1.2rem;

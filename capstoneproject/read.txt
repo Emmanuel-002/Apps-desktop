@@ -1,0 +1,22 @@
+npm install body-parser
+npm install express
+npm install mongoose
+npm install cors
+npm install crypto
+npm install helmet
+npm install express-jwt
+npm install jsonwebtoken
+npm install -g nodemon
+payload are the fields to be used for the validation
+create a new react application
+install react-router-dom, axios
+create Components -> 
+    Header -> Header.js, 
+    Login -> Login.js, 
+    AddUser -> AddUser.js, 
+    ListUser -> ListUser.js
+    EditUser -> EditUser.js
+Routing : / -> ListUser
+    /login : Login.js
+    /add -> AddUser.js
+    /edit/:id -> EditUser.js

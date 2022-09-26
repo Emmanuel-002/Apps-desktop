@@ -1,0 +1,22 @@
+const express=require("express")
+const mongoose=require("mongoose")
+const app=express()
+//for server to be open for incoming requests
+const cors=require("cors")
+const helmet=require("helmet")
+const bodyparser=require("body-parser")
+const user=require('./routes/user')
+app.use(bodyparser.json())
+app.use(bodyparser.urlencoded({extended: false}))
+app.use(helmet())
+app.use(cors())
+app.use("/user",user)
+app.get('/',(req,res)=>{
+    res.send('Project up and running')
+})
+app.listen(3000,()=>{
+console.log('Server Connected')
+    mongoose.connect('mongodb://localhost:27017/fsd3Capstone')
+    .then((result)=>{console.log('Connected')})
+    .catch((e)=>{console.log(e)})
+})

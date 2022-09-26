@@ -1,3 +1,4 @@
+//jonsmilga.com
 // const express=require('express')
 // const app=express()
 // const shopRouter=require('./components/shop')
@@ -15,18 +16,31 @@
 //     res.end(txt)
 // }).listen(3000)
 
-const http=require('http')
-const url=require('url')
-const fs=require('fs')
+// const http=require('http')
+// const url=require('url')
+// const fs=require('fs')
 
-http.createServer((req,res)=>{
-    fs.readFile('index.html', function(err=false, data) {
-        if(err){
-            res.writeHead(404, {'Content-Type': 'text/html'})
-            res.write('error')
-        }  
-        res.writeHead(200, {'Content-Type': 'text/html'});
-        res.write(data);
-        return res.end();
+// const server = http.createServer((req,res)=>{
+//     fs.readFile('index.html', function(err, data) {
+//         if(err){
+//             res.writeHead(404, {'Content-Type': 'text/html'})
+//             res.write('error')
+//         }
+
+//         res.writeHead(200, {'Content-Type': 'text/html'});
+//         res.write(data);
+//         return res.end();
+    
+// })
+// })
+
+
+
+// const http = require('http')
+const express = require('express')
+const app = express()
+const server=app.use('/product', (req,res)=>{
+    res.send('<button>button</button><h1>Hi user')
 })
-}).listen(3000)
+
+server.listen(3000)
