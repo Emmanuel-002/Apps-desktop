@@ -1,8 +1,9 @@
 import {Link,useNavigate} from 'react-router-dom';
+
 const Products = () =>{
     // return <h1>Products Page</h1>
     const navigate = useNavigate()
-    const buttonClickHandler = () =>{
+    const navigateToHomePage = () =>{
         navigate('/welcome');
     }
     return <section>
@@ -17,7 +18,7 @@ const Products = () =>{
                     {/* <li>Books</li>
                     <li>Series</li> */}
                 </ul>
-                <button onClick={buttonClickHandler}>Go to Welcome Page</button>
+                <button onClick={navigateToHomePage}>Go to Welcome Page</button>
             </section>
 }
 export default Products;

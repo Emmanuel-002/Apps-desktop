@@ -1,5 +1,5 @@
 import styles from './MainHeader.module.css';
-import {Link,NavLink} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 const MainHeader=()=>{
     return(
@@ -12,7 +12,7 @@ const MainHeader=()=>{
                         <NavLink 
                         to='/welcome' 
                         // className={(isActive)=>console.log('welcome',isActive)}
-                        //NavLink to be used for a section that is to be seen all the time. e.g. a naigation bar on the header section
+                        //NavLink to be used for a section that is to be seen all the time. e.g. a navigation bar on the header section
                         className={(activelink)=>activelink.isActive ? styles.active : ''}
                         >
                             Welcome
@@ -26,7 +26,7 @@ const MainHeader=()=>{
                         className={(activelink)=>activelink.isActive ? styles.active : ''}
                         >
                             Products
-                        </NavLink> {/*1:03*/}
+                        </NavLink>
                     </li>
                 </ul>
             </nav>

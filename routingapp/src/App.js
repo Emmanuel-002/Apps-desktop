@@ -6,6 +6,7 @@ import ProductDetails from './components/Products/ProductDetails';
 import './App.css';
 import {Routes,Route,Navigate} from 'react-router-dom'
 import MainHeader from './components/MainHeader/MainHeader';
+import Content from './components/Content/Content';
 
 //Routes is a group of all route
 //route is the path for single page
@@ -13,6 +14,7 @@ function App() {
   return (
     <div>
       <MainHeader />
+      <Content />
       <main>
       <Routes>
         {/* localhost:3000 */}
